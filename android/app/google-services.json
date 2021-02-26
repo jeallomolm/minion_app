@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944575015648",
+    "project_id": "minionsapp2021",
+    "storage_bucket": "minionsapp2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944575015648:android:b48ccd3259cd4936ee3e85",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944575015648-8quldl22fiiiunn3ga7ikibb3o4gb24n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXqAYu78GK8B9BM5ihvYbR7cOj34VJjtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944575015648-8quldl22fiiiunn3ga7ikibb3o4gb24n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

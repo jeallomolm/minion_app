@@ -1,15 +1,18 @@
+import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/models/models.dart';
+import 'package:flutter_app/screens/edit_screen.dart';
 import 'package:flutter_app/widgets/widgets.dart';
 import 'package:flutter_app/config/config.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class CharacterScreen extends StatelessWidget {
+  final VoidCallback openContainer;
   final VoidCallback closeContainer;
   final Character char;
 
-  CharacterScreen(this.closeContainer, this.char);
+  CharacterScreen(this.closeContainer, this.char, this.openContainer);
 
   Card img(Character char, int n, BuildContext context) {
     return Card(
@@ -52,11 +55,11 @@ class CharacterScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Row(
-                    children: [img(char, 1, context), img(char, 1, context)],
+                    children: [img(char, 1, context), img(char, 2, context)],
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   ),
                   Row(
-                    children: [img(char, 1, context), img(char, 1, context)],
+                    children: [img(char, 3, context), img(char, 4, context)],
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   )
                 ],
@@ -72,9 +75,13 @@ class CharacterScreen extends StatelessWidget {
             extendBodyBehindAppBar: true,
             backgroundColor: Colors.transparent,
             appBar: AppBar(
-                shadowColor: Colors.transparent,
-                backgroundColor: Colors.transparent,
-                leading: Button(Icons.close, closeContainer, 20.0)),
+              shadowColor: Colors.transparent,
+              backgroundColor: Colors.transparent,
+              leading: Button(Icons.close, closeContainer, 30.0),
+              actions: [
+                Button(Icons.edit, openContainer, 30.0),
+              ],
+            ),
             body: SingleChildScrollView(
               child: Container(
                 width: double.infinity,

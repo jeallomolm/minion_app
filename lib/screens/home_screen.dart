@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/config/config.dart';
+import 'package:flutter_app/firebase/firebase.dart';
 import 'package:flutter_app/widgets/widgets.dart';
 
 import '../widgets/button.dart';
@@ -16,7 +17,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         shadowColor: Colors.transparent,
         backgroundColor: Colors.transparent,
-        actions: [Button(Icons.search, () => print("asd"), 30.0)],
+        actions: [
+          Button(Icons.search, () {}, 30.0),
+        ],
         leading: Button(Icons.arrow_back_ios, () {}, 20.0),
       ),
       body: Column(

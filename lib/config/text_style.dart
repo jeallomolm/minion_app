@@ -5,7 +5,7 @@ class TxtStyle {
   static const TextStyle title = TextStyle(
       color: Colors.black, fontWeight: FontWeight.bold, fontSize: 40.0);
   static const TextStyle subTitle =
-      TextStyle(color: Colors.black, fontSize: 35.0);
+      TextStyle(color: Colors.black, fontSize: 35.0, fontFamily: "Lekton");
   static const TextStyle name = TextStyle(
       color: Colors.white, fontSize: 40.0, fontWeight: FontWeight.bold);
   static const TextStyle text =

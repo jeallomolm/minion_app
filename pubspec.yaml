@@ -30,8 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   sliding_up_panel: ^1.0.2
   animations: ^1.1.2
-  firebase_core: ^0.4.5
-  firebase_auth: ^0.16.1
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.1
+  cloud_firestore: ^0.16.0+1
 
 dev_dependencies:
   flutter_test:
@@ -59,11 +60,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: Lekton
+      fonts:
+        - asset: fonts/Lekton-Regular.ttf
+        - asset: fonts/Lekton-Italic.ttf
+        - asset: fonts/Lekton-Bold.ttf
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

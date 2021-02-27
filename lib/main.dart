@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_app/screens/screens.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
